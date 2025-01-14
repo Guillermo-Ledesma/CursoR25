@@ -12,3 +12,7 @@ ggplot(dt, aes(x=Petal.Length, fill=Species))+
 
 ggplot(dt, aes(x=Petal.Length, fill=Species))+
   geom_density()
+
+ggplot(dt, aes(x=Petal.Length, fill=Species))+
+  geom_density() +
+  scale_fill_manual(values = c("white", "green", "yellow"))
